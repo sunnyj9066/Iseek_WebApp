@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Iseek WebApp Automation Suite" parallel="tests" verbose="10" configfailurepolicy="skip">
+	<parameter name="baseUrl" value="http://122.166.186.167:8080/Merchant_APP1/#/login"/>
+  <test name="Iseek Test">
+  		<parameter name="userName" value="9511854553"/>
+  		<parameter name="Password" value="4722"/>
+    <classes>
+      	<class name="scripts.BaseClass"/>
+      	<class name="scripts.CreateOffers"/>
+    </classes>
+  </test>
+</suite>

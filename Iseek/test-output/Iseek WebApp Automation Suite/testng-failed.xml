@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Iseek WebApp Automation Suite]" parallel="tests">
+  <parameter name="baseUrl" value="http://122.166.186.167:8080/Merchant_APP1/#/login"/>
+  <test thread-count="5" verbose="10" name="Iseek Test(failed)" parallel="tests">
+    <parameter name="userName" value="9511854553"/>
+    <parameter name="Password" value="4722"/>
+    <classes>
+      <class name="scripts.CreateOffers">
+        <methods>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="createOffers" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- scripts.CreateOffers -->
+    </classes>
+  </test> <!-- Iseek Test(failed) -->
+</suite> <!-- Failed suite [Iseek WebApp Automation Suite] -->
