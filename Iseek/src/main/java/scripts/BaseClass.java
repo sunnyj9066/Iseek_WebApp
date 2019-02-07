@@ -1,19 +1,13 @@
 package scripts;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import Helper.BrowserFactory;
-import common_lib.AppSpecific_Methods;
 import common_lib.Common_Methods;
 import function_lib.CreateOffersPage;
 import function_lib.LoginPage;

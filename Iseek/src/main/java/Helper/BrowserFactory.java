@@ -12,15 +12,15 @@ public class BrowserFactory extends BaseClass{
 	public static WebDriver StartBrowser(String BrowserName) {
 		
 		if(BrowserName.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Sunny\\eclipse-workspace\\Iseek\\Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Sunny\\git\\repository\\Iseek_WebApp\\Iseek\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}else
 		if(BrowserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sunny\\eclipse-workspace\\Iseek\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sunny\\git\\repository\\Iseek_WebApp\\Iseek\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}else
 		if(BrowserName.equalsIgnoreCase("edge")) {
-			System.setProperty("webdriver.edge.driver", "C:\\Users\\Sunny\\eclipse-workspace\\Iseek\\Drivers\\MicrosoftWebDriver.exe");
+			System.setProperty("webdriver.edge.driver", "C:\\Users\\Sunny\\git\\repository\\Iseek_WebApp\\Iseek\\Drivers\\MicrosoftWebDriver.exe");
 			driver = new EdgeDriver();
 		}
 		driver.manage().window().maximize();

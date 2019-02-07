@@ -12,7 +12,7 @@ public class ExcelReader {
 	static XSSFWorkbook wbook;
 	static XSSFSheet sheet;
 	
-	static File src = new File("C:\\Users\\Sunny\\eclipse-workspace\\Iseek\\src\\test\\TestData\\Data.xlsx");
+	static File src = new File("C:\\Users\\Sunny\\.jenkins\\workspace\\Iseek\\Iseek\\src\\test\\TestData\\Data.xlsx");
 	
 	public static Object[][] getTestData(String Sheetname) {
 		

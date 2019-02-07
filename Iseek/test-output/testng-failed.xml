@@ -10,7 +10,7 @@
         <methods>
           <include name="logout"/>
           <include name="login"/>
-          <include name="createOffers" invocation-numbers="0"/>
+          <include name="createOffers"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- scripts.CreateOffers -->

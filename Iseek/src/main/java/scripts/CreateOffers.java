@@ -15,7 +15,7 @@ public class CreateOffers extends BaseClass{
 	  public void createOffers(String OfferName, String desc, String expiry, String disc, String MinBill, String Msg) throws Exception {
 		  System.out.println("--------Creating Offer----------");
 		  try {
-			crpage = PageFactory.initElements(driver, CreateOffersPage.class);
+			  crpage = PageFactory.initElements(driver, CreateOffersPage.class);
 			  crpage.CreateOffers_btn.click();
 			  crpage.AddOffer_btn.click();
 			  crpage.SelectBusinessCategory.click();
