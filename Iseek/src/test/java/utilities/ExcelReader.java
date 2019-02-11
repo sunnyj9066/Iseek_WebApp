@@ -29,7 +29,8 @@ public class ExcelReader {
 			e.printStackTrace();
 		}
 		sheet = wbook.getSheet(Sheetname);
-		for(int i=0; i<sheet.getRow(0).getLastCellNum(); i++) {
+		short cellcount = sheet.getRow(0).getLastCellNum();
+		for(int i=0; i<cellcount; i++) {
 			data = sheet.getRow(Row).getCell(i).getStringCellValue();	
 		}
 		return data;
