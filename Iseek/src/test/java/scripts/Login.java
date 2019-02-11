@@ -15,7 +15,7 @@ public class Login extends BaseClass{
 	
   @DataProvider
   public Object[][] getloginData() {
-	 Object data [][]=ExcelReader.getTestData("Login");
+	 Object data [][]=ExcelReader.getTestData("Login", 1);
 	 return data;
   }
   

@@ -35,6 +35,30 @@ public class CreateOffersPage extends BaseClass {
 	@FindBy(xpath="//textarea[contains(@id,'mat-input-') and @placeholder='Description']")
 	public WebElement Description;
 	
+	@FindBy(xpath="//input[@placeholder='Start date']")
+	public WebElement StartDate;
+	
+	@FindBy(xpath="//input[@placeholder='Start time']")
+	public WebElement StartTime;
+	
+	@FindBy(xpath="//div[text()='AM']")
+	public WebElement AM;
+	
+	@FindBy(xpath="//div[@class='time-picker-hour selected']")
+	public WebElement HourPicker;
+	
+	@FindBy(xpath="//div[@class='time-picker-minute']")
+	public WebElement MinutePicker;
+	
+	@FindBy(id="timepicker-item-id-12")
+	public WebElement Hour;
+	
+	@FindBy(id="timepicker-item-id-0")
+	public WebElement Minute;
+	
+	@FindBy(xpath="//button[text()='Ok']")
+	public WebElement TimeOK;
+	
 	@FindBy(xpath="//input[contains(@id,'mat-input-') and @placeholder='Expiry date']")
 	public WebElement ExpiryDate;
 	

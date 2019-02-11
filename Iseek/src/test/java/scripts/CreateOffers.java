@@ -12,7 +12,7 @@ import utilities.DataProviderClass;
 public class CreateOffers extends BaseClass{
 	  
 	  @Test(dataProvider="getCreateOffersData",dataProviderClass=DataProviderClass.class)
-	  public void createOffers(String OfferName, String desc, String expiry, String disc, String MinBill, String Msg) throws Exception {
+	  public void createOffers(String OfferName, String desc, String startdate, String expiry, String disc, String MinBill, String Msg) throws Exception {
 		  System.out.println("--------Creating Offer----------");
 		  try {
 			  crpage = PageFactory.initElements(driver, CreateOffersPage.class);
@@ -36,6 +36,16 @@ public class CreateOffers extends BaseClass{
 				crpage.Description.sendKeys(desc);
 			}
 			  CaptureScreenshot.screenshot("NewOffer Page1");
+			  crpage.StartDate.click();
+			  crpage.StartDate.clear();
+			  crpage.StartDate.sendKeys(startdate);
+			  crpage.StartTime.click();
+			  crpage.AM.click();
+			  crpage.HourPicker.click();
+			  crpage.Hour.click();
+			  crpage.MinutePicker.click();
+			  crpage.Minute.click();
+			  crpage.TimeOK.click();
 			  crpage.ExpiryDate.sendKeys(expiry);
 			  crpage.SelectDiscount.click();
 			  crpage.DiscountonBill.click();
@@ -49,9 +59,11 @@ public class CreateOffers extends BaseClass{
 			  crpage.Submit.click();
 			  CaptureScreenshot.screenshot("OfferConfirmation Page");
 			  crpage.OfferConfirm.click();
+			  Thread.sleep(3000);
 			  crpage.Confirm.click();
 			  crpage.EnterMessage.sendKeys(Msg);
 			  CaptureScreenshot.screenshot("SendNotification Page");
+			  Thread.sleep(3000);
 			  crpage.Submit.click();
 			  CaptureScreenshot.screenshot("Notification update Msg");
 		} catch (Exception e) {

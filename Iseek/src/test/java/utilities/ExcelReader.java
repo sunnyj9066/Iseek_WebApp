@@ -14,7 +14,7 @@ public class ExcelReader {
 	
 	static File src = new File("C:\\Users\\Sunny\\git\\Iseek_WebApp\\Iseek_WebApp\\Iseek\\src\\resources\\TestData\\Data.xlsx");
 	
-	public static Object[][] getTestData(String Sheetname) {
+	public static Object[][] getTestData(String Sheetname, int Row) {
 		
 		FileInputStream fis = null;
 		try {
@@ -28,9 +28,9 @@ public class ExcelReader {
 			e.printStackTrace();
 		}
 		sheet = wbook.getSheet(Sheetname);
-		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(Row).getLastCellNum()];
 		for(int i=0; i<sheet.getLastRowNum(); i++) {
-			for(int j=0; j<sheet.getRow(0).getLastCellNum(); j++) {
+			for(int j=0; j<sheet.getRow(Row).getLastCellNum(); j++) {
 				data[i][j] = sheet.getRow(i+1).getCell(j).toString();
 			}
 		}
