@@ -29,7 +29,7 @@ public class ExcelReader {
 			e.printStackTrace();
 		}
 		sheet = wbook.getSheet(Sheetname);
-		for(int i=0; i<sheet.getRow(Row).getLastCellNum(); i++) {
+		for(int i=0; i<sheet.getRow(0).getLastCellNum(); i++) {
 			data = sheet.getRow(Row).getCell(i).getStringCellValue();	
 		}
 		return data;
