@@ -7,14 +7,14 @@ import scripts.BaseClass;
 public class DataProviderClass extends BaseClass{
 	
 	@DataProvider
-	  public Object[][] getloginData() {
-		 Object data [][]=ExcelReader.getTestData("Login", 1);
+	  public String getloginData() {
+		 String data=ExcelReader.getTestData("Login", 1);
 		 return data;
 	  }
 
 	@DataProvider
-	  public Object[][] getCreateOffersData(){
-		  Object data [][]=ExcelReader.getTestData("CreatOffers", 2);
+	  public String getCreateOffersData(){
+		  String data=ExcelReader.getTestData("CreatOffers", 2);
 			 return data;
 	  }
 }

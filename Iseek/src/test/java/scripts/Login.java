@@ -14,8 +14,8 @@ import utilities.ExcelReader;
 public class Login extends BaseClass{
 	
   @DataProvider
-  public Object[][] getloginData() {
-	 Object data [][]=ExcelReader.getTestData("Login", 1);
+  public String getloginData() {
+	 String data=ExcelReader.getTestData("Login", 1);
 	 return data;
   }
   
