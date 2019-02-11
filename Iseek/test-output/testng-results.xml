@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Iseek WebApp Automation Suite" duration-ms="40216" started-at="2019-02-07T13:01:01Z" finished-at="2019-02-07T13:01:41Z">
+  <suite name="Iseek WebApp Automation Suite" duration-ms="42839" started-at="2019-02-11T11:32:33Z" finished-at="2019-02-11T11:33:16Z">
     <groups>
     </groups>
-    <test name="Iseek Test" duration-ms="40216" started-at="2019-02-07T13:01:01Z" finished-at="2019-02-07T13:01:41Z">
+    <test name="Iseek Test" duration-ms="42839" started-at="2019-02-11T11:32:33Z" finished-at="2019-02-11T11:33:16Z">
       <class name="scripts.CreateOffers">
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:scripts.CreateOffers@66d1af89]" name="login" is-config="true" duration-ms="26036" started-at="2019-02-07T13:01:01Z" finished-at="2019-02-07T13:01:27Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:scripts.CreateOffers@66d1af89]" name="login" is-config="true" duration-ms="25912" started-at="2019-02-11T11:32:33Z" finished-at="2019-02-11T11:32:59Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createOffers(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.CreateOffers@66d1af89]" name="createOffers" duration-ms="12104" started-at="2019-02-07T13:01:29Z" data-provider="getCreateOffersData" finished-at="2019-02-07T13:01:41Z">
+        <test-method status="PASS" signature="createOffers(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.CreateOffers@66d1af89]" name="createOffers" duration-ms="15020" started-at="2019-02-11T11:33:00Z" data-provider="getCreateOffersData" finished-at="2019-02-11T11:33:16Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOffers -->
-        <test-method status="FAIL" signature="logout()[pri:0, instance:scripts.CreateOffers@66d1af89]" name="logout" is-config="true" duration-ms="5" started-at="2019-02-07T13:01:41Z" finished-at="2019-02-07T13:01:41Z">
+        <test-method status="FAIL" signature="logout()[pri:0, instance:scripts.CreateOffers@66d1af89]" name="logout" is-config="true" duration-ms="1" started-at="2019-02-11T11:33:16Z" finished-at="2019-02-11T11:33:16Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -93,7 +93,7 @@ at java.lang.Thread.run(Thread.java:748)
         </test-method> <!-- logout -->
       </class> <!-- scripts.CreateOffers -->
       <class name="scripts.BaseClass">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:scripts.BaseClass@4a87761d]" name="setUp" is-config="true" duration-ms="18290" started-at="2019-02-07T13:00:42Z" finished-at="2019-02-07T13:01:01Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:scripts.BaseClass@4a87761d]" name="setUp" is-config="true" duration-ms="13408" started-at="2019-02-11T11:32:19Z" finished-at="2019-02-11T11:32:33Z">
           <params>
             <param index="0">
               <value>
