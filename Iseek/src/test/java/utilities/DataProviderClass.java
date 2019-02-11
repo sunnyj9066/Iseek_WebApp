@@ -14,7 +14,7 @@ public class DataProviderClass extends BaseClass{
 
 	@DataProvider
 	  public String getCreateOffersData(){
-		  String data=ExcelReader.getTestData("CreatOffers", 2);
+		  String data=ExcelReader.getTestData("CreateOffers", 2);
 			 return data;
 	  }
 }
